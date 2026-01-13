@@ -14,7 +14,17 @@ print(price>10 or price<30)
 temperature=9
 if temperature>30:
     print("It's a hot day")
-elif temperature<10:
+elif temperature<10: # comment:It's a cold day
     print("It's a cold day")
 else:
     print("It's a lovely day")
+
+weight = int(input("Weight: "))
+unit = input("(K)g or (L)bs: ")
+if unit.upper() == "K":
+    converted = weight / 0.45
+    print("You are " + str(converted) + " Lbs")
+else:
+    converted = weight * 0.45
+    print("You are " + str(converted) + " Kgs")
+
